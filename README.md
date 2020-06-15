@@ -1,4 +1,4 @@
-# Pokemon-Mapledex
+# Pokemon Mapledex
 If MapleStory classes were Pokemon. Webpage based on Bulbapedia.
 
 References:
@@ -10,9 +10,6 @@ References:
 - https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number
 
 ![splash](images/splash.png)
-
-## GitHub Pages
-https://hyssopi.github.io/Pokemon-Mapledex
 
 ## Prerequisites
 (None)
