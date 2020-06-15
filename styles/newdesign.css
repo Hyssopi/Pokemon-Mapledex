@@ -1,0 +1,57 @@
+﻿#content {
+    margin: 0.0em 0 0 12.2em !important;
+    border-right: 1px solid #3E7614 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width:975px !important;
+    /*max-width:1005px !important;*/
+    border-radius: 1em 1em 1em 1em !important;
+}
+
+/*@media screen and (max-width: 1300px) {
+    #content {
+        max-width: 875px !important;
+    }
+
+    #reswitch img {
+        width: 175px;
+    }
+
+}*/
+
+body {
+    overflow-x:hidden;
+}
+
+#div-gpt-ad-1498167603841-0 {
+    position:absolute;
+    top: 50px !important;
+}
+
+#rightcolbox {
+    display:none !important;
+}
+
+#p-logo {
+    display:none !important;
+}
+
+#p-cactions {
+    /*display:none !important;*/
+}
+
+#p-search {
+    display:none !important;
+}
+
+#p-Bulbagarden {
+    display:none !important;
+}
+
+#headerad {
+    display:none !important;
+}
+
+#column-one {
+    display:none;
+}
