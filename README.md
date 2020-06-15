@@ -7,6 +7,7 @@ References:
 - https://ayumilove.net/maplestory-explorer-beginner-skill-build-guide/
 - http://maplestory.nexon.net/news/3741/v-165--pink-bean-superstar-patch-notes#pinkbean
 - https://maplestory.fandom.com/wiki/Characters_and_Skills
+- https://maplestory.fandom.com/wiki/Category:Major_Bosses
 - https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number
 
 ![splash](images/splash.png)
