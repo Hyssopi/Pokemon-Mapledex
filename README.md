@@ -1,5 +1,5 @@
 # Pokemon Mapledex
-If MapleStory classes were Pokemon. Webpage based on Bulbapedia.
+If MapleStory classes/bosses were Pokemon. Webpage based on Bulbapedia.
 
 References:
 - http://maplestory.nexon.net/game/classes-jobs
