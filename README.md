@@ -12,6 +12,9 @@ References:
 
 ![splash](images/splash.png)
 
+## GitHub Pages
+https://hyssopi.github.io/Pokemon-Mapledex/
+
 ## Prerequisites
 (None)
 
