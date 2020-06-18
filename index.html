@@ -21,23 +21,39 @@
               <!-- start content -->
               <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
                 <p>
-                  This is a list of Pokémon in the order dictated by the <a href="index.html" title="National Mapledex">National Mapledex</a>. Pokémon will appear in order of their release date.
+                  This is a list of Pokémon in the order dictated by the <a href="index.html" title="National Mapledex">National Mapledex</a>. Pokémon will appear in order of their release date for <strong>classes</strong>, and boss queue order for <strong>bosses</strong>.
                 </p>
                 <div id="toc" class="toc">
                   <div id="toctitle" class="toctitle">
                     <h2>Contents</h2>
                   </div>
                   <ul>
-                    <li class="toclevel-1 tocsection-1"><a href="#List_of_Pok.C3.A9mon_by_National_Pok.C3.A9dex_number"><span class="tocnumber">1</span>
-                        <span class="toctext">List of Pokémon by National Mapledex number</span></a>
+                    <li class="toclevel-1 tocsection-1"><a href="#List_of_Pok.C3.A9mon_by_Class_Mapledex_number"><span class="tocnumber">1</span>
+                        <span class="toctext">List of Pokémon by Class Mapledex number</span></a>
                     </li>
-                    <li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+                    <li class="toclevel-1 tocsection-2"><a href="#List_of_Pok.C3.A9mon_by_Boss_Mapledex_number"><span class="tocnumber">2</span>
+                        <span class="toctext">List of Pokémon by Boss Mapledex number</span></a>
+                    </li>
+                    <li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
                   </ul>
                 </div>
-                <h2><span class="mw-headline" id="List_of_Pok.C3.A9mon_by_National_Pok.C3.A9dex_number">List of Pokémon
-                    by National Mapledex number</span></h2>
+
+                <h2>
+                  <span id="List_of_Pok.C3.A9mon_by_Class_Mapledex_number" class="mw-headline">
+                    List of Pokémon by Class Mapledex number
+                  </span>
+                </h2>
                 <table style="border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; -icab-border-radius: 10px; -o-border-radius: 10px;; border: 2px solid #444444; background: #444444;" align="center">
-                  <tbody id="mapledexTableBodyId"></tbody>
+                  <tbody id="classMapledexTableBodyId"></tbody>
+                </table>
+
+                <h2>
+                  <span id="List_of_Pok.C3.A9mon_by_Boss_Mapledex_number" class="mw-headline">
+                    List of Pokémon by Boss Mapledex number
+                  </span>
+                </h2>
+                <table style="border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; -icab-border-radius: 10px; -o-border-radius: 10px;; border: 2px solid #444444; background: #444444;" align="center">
+                  <tbody id="bossMapledexTableBodyId"></tbody>
                 </table>
 
                 <h2><span class="mw-headline" id="See_also">See also</span></h2>
@@ -64,25 +80,9 @@
                                       </td>
                                     </tr>
                                     <tr style="font-size: 90%;">
-                                      <th style="background: #ddf; padding: 2px 15px;">by in-game stats</th>
+                                      <th style="background: #ddf; padding: 2px 15px;">Pokedex</th>
                                       <td style="background: #e6e6ff; padding: 2px 10px;">
-                                        <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VIII-present)" title="List of Pokémon by base stats (Generation VIII-present)">base stats</a>
-                                        •
-                                        <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_effort_value_yield" title="List of Pokémon by effort value yield">EVs given in battle</a>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td colspan="2" height="1">
-                                      </td>
-                                    </tr>
-                                    <tr style="font-size: 90%;">
-                                      <th class="roundybl" style="background: #ddf; border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; -khtml-border-bottom-left-radius: 10px; -icab-border-bottom-left-radius: 10px; -o-border-bottom-left-radius: 10px; padding: 2px 15px;">
-                                        miscellaneous
-                                      </th>
-                                      <td class="roundybr" style="background: #e6e6ff; padding: 2px 10px;">
-                                        <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Super_Training_Energy_Shot" title="List of Pokémon by Super Training Energy Shot">ST Energy Shot</a>
-                                        •
-                                        <a href="https://bulbapedia.bulbagarden.net/wiki/Petting" title="Petting">petting</a>
+                                        <a href="index.html" title="National Mapledex">National Mapledex</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -216,7 +216,7 @@
       }
     };
 
-    const POKEMON_DATA =
+    const CLASS_DATA =
     [
       {"id": "BEGINNER", "name": "Beginner", "number": 1, "type1": "NORMAL", "type2": "", "hp": 40, "attack": 30, "defense": 40, "specialAttack": 40, "specialDefense": 40, "speed": 40},
       {"id": "WARRIOR", "name": "Warrior", "number": 2, "type1": "FIGHTING", "type2": "", "hp": 41, "attack": 31, "defense": 41, "specialAttack": 41, "specialDefense": 41, "speed": 41},
@@ -231,13 +231,13 @@
       {"id": "BOWMASTER", "name": "Bowmaster", "number": 11, "type1": "NORMAL", "type2": "FIRE", "hp": 50, "attack": 40, "defense": 50, "specialAttack": 50, "specialDefense": 50, "speed": 50},
       {"id": "MARKSMAN", "name": "Marksman", "number": 12, "type1": "NORMAL", "type2": "ICE", "hp": 51, "attack": 41, "defense": 51, "specialAttack": 51, "specialDefense": 51, "speed": 51},
       {"id": "THIEF", "name": "Thief", "number": 13, "type1": "DARK", "type2": "", "hp": 52, "attack": 42, "defense": 52, "specialAttack": 52, "specialDefense": 52, "speed": 52},
-      {"id": "NIGHT_LORD", "name": "Night Lord", "number": 14, "type1": "DARK", "type2": "", "hp": 53, "attack": 43, "defense": 53, "specialAttack": 53, "specialDefense": 53, "speed": 53},
+      {"id": "NIGHT_LORD", "name": "Night Lord", "number": 14, "type1": "DARK", "type2": "POISON", "hp": 53, "attack": 43, "defense": 53, "specialAttack": 53, "specialDefense": 53, "speed": 53},
       {"id": "SHADOWER", "name": "Shadower", "number": 15, "type1": "DARK", "type2": "POISON", "hp": 54, "attack": 44, "defense": 54, "specialAttack": 54, "specialDefense": 54, "speed": 54},
       {"id": "PIRATE", "name": "Pirate", "number": 16, "type1": "NORMAL", "type2": "", "hp": 55, "attack": 45, "defense": 55, "specialAttack": 55, "specialDefense": 55, "speed": 55},
       {"id": "CORSAIR", "name": "Corsair", "number": 17, "type1": "NORMAL", "type2": "STEEL", "hp": 56, "attack": 46, "defense": 56, "specialAttack": 56, "specialDefense": 56, "speed": 56},
       {"id": "BUCCANEER", "name": "Buccaneer", "number": 18, "type1": "FIGHTING", "type2": "", "hp": 57, "attack": 47, "defense": 57, "specialAttack": 57, "specialDefense": 57, "speed": 57},
       {"id": "NOBLESSE", "name": "Noblesse", "number": 19, "type1": "NORMAL", "type2": "", "hp": 58, "attack": 48, "defense": 58, "specialAttack": 58, "specialDefense": 58, "speed": 58},
-      {"id": "DAWN_WARRIOR", "name": "Dawn Warrior", "number": 20, "type1": "STEEL", "type2": "FIGHTING", "hp": 59, "attack": 49, "defense": 59, "specialAttack": 59, "specialDefense": 59, "speed": 59},
+      {"id": "DAWN_WARRIOR", "name": "Dawn Warrior", "number": 20, "type1": "FIRE", "type2": "FIGHTING", "hp": 59, "attack": 49, "defense": 59, "specialAttack": 59, "specialDefense": 59, "speed": 59},
       {"id": "BLAZE_WIZARD", "name": "Blaze Wizard", "number": 21, "type1": "FIRE", "type2": "", "hp": 60, "attack": 50, "defense": 60, "specialAttack": 60, "specialDefense": 60, "speed": 60},
       {"id": "WIND_ARCHER", "name": "Wind Archer", "number": 22, "type1": "NORMAL", "type2": "FLYING", "hp": 61, "attack": 51, "defense": 61, "specialAttack": 61, "specialDefense": 61, "speed": 61},
       {"id": "NIGHT_WALKER", "name": "Night Walker", "number": 23, "type1": "DARK", "type2": "", "hp": 62, "attack": 52, "defense": 62, "specialAttack": 62, "specialDefense": 62, "speed": 62},
@@ -279,14 +279,18 @@
       {"id": "ARK", "name": "Ark", "number": 55, "type1": "DARK", "type2": "FIGHTING", "hp": 98, "attack": 88, "defense": 98, "specialAttack": 98, "specialDefense": 98, "speed": 98},
       {"id": "PATHFINDER", "name": "Pathfinder", "number": 56, "type1": "DARK", "type2": "", "hp": 99, "attack": 89, "defense": 99, "specialAttack": 99, "specialDefense": 99, "speed": 99},
       {"id": "HOYOUNG", "name": "Hoyoung", "number": 57, "type1": "GHOST", "type2": "PSYCHIC", "hp": 100, "attack": 90, "defense": 100, "specialAttack": 100, "specialDefense": 100, "speed": 100},
-      {"id": "ADELE", "name": "Adele", "number": 58, "type1": "PSYCHIC", "type2": "", "hp": 101, "attack": 91, "defense": 101, "specialAttack": 101, "specialDefense": 101, "speed": 101},
+      {"id": "ADELE", "name": "Adele", "number": 58, "type1": "PSYCHIC", "type2": "", "hp": 101, "attack": 91, "defense": 101, "specialAttack": 101, "specialDefense": 101, "speed": 101}
+    ];
+
+    const BOSS_DATA =
+    [
       {"id": "BALROG", "name": "Balrog", "number": 1, "type1": "DARK", "type2": "", "hp": 102, "attack": 92, "defense": 102, "specialAttack": 102, "specialDefense": 102, "speed": 102},
       {"id": "ZAKUM", "name": "Zakum", "number": 2, "type1": "ROCK", "type2": "GROUND", "hp": 103, "attack": 93, "defense": 103, "specialAttack": 103, "specialDefense": 103, "speed": 103},
       {"id": "URSUS", "name": "Ursus", "number": 3, "type1": "GROUND", "type2": "", "hp": 104, "attack": 94, "defense": 104, "specialAttack": 104, "specialDefense": 104, "speed": 104},
       {"id": "MAGNUS", "name": "Magnus", "number": 4, "type1": "DRAGON", "type2": "FLYING", "hp": 105, "attack": 95, "defense": 105, "specialAttack": 105, "specialDefense": 105, "speed": 105},
       {"id": "HILLA", "name": "Hilla", "number": 5, "type1": "GHOST", "type2": "DARK", "hp": 106, "attack": 96, "defense": 106, "specialAttack": 106, "specialDefense": 106, "speed": 106},
       {"id": "OMNI_CLN", "name": "OMNI-CLN", "number": 6, "type1": "STEEL", "type2": "ELECTRIC", "hp": 107, "attack": 97, "defense": 107, "specialAttack": 107, "specialDefense": 107, "speed": 107},
-      {"id": "PAPULATUS", "name": "Papulatus", "number": 7, "type1": "STEEL", "type2": "FLYING", "hp": 108, "attack": 98, "defense": 108, "specialAttack": 108, "specialDefense": 108, "speed": 108},
+      {"id": "PAPULATUS", "name": "Papulatus", "number": 7, "type1": "GHOST", "type2": "STEEL", "hp": 108, "attack": 98, "defense": 108, "specialAttack": 108, "specialDefense": 108, "speed": 108},
       {"id": "PIERRE", "name": "Pierre", "number": 8, "type1": "NORMAL", "type2": "", "hp": 109, "attack": 99, "defense": 109, "specialAttack": 109, "specialDefense": 109, "speed": 109},
       {"id": "VON_BON", "name": "Von Bon", "number": 9, "type1": "PSYCHIC", "type2": "", "hp": 110, "attack": 100, "defense": 110, "specialAttack": 110, "specialDefense": 110, "speed": 110},
       {"id": "CRIMSON_QUEEN", "name": "Crimson Queen", "number": 10, "type1": "POISON", "type2": "DARK", "hp": 111, "attack": 101, "defense": 111, "specialAttack": 111, "specialDefense": 111, "speed": 111},
@@ -310,46 +314,73 @@
       {"id": "JULIETA", "name": "Julieta", "number": 28, "type1": "POISON", "type2": "", "hp": 129, "attack": 119, "defense": 129, "specialAttack": 129, "specialDefense": 129, "speed": 129}
     ];
 
-    document.getElementById("mapledexTableBodyId").innerHTML = mapledexTableBody();
+    document.getElementById("classMapledexTableBodyId").innerHTML = mapledexTableBody("classMapledexTableBodyId");
+    document.getElementById("bossMapledexTableBodyId").innerHTML = mapledexTableBody("bossMapledexTableBodyId");
 
-    function mapledexTableBody()
+    function mapledexTableBody(id)
     {
       let html = '';
 
       html += `
         <tr>
-          <th style="background: #64D364"> Mdex</th>
-          <th style="background: #64D364"> Icon</th>
-          <th style="background: #64D364"> Pokémon</th>
-          <th style="border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px; background: #64D364" colspan="2">Type</th>
+      `;
+
+      let pokemonData = null;
+      if (id === "classMapledexTableBodyId")
+      {
+        pokemonData = CLASS_DATA;
+        html += `
+            <th style="background: #64D364;" width="35px"> Mdex</th>
+        `;
+      }
+      else if (id === "bossMapledexTableBodyId")
+      {
+        pokemonData = BOSS_DATA;
+        html += `
+            <th style="background: #64D364;" width="35px"> Bdex</th>
+        `;
+      }
+
+      html += `
+          <th style="background: #64D364;"> Icon</th>
+          <th style="background: #64D364;" width="170px">Pokémon</th>
+          <th style="border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; -icab-border-top-right-radius: 5px; -o-border-top-right-radius: 5px; background: #64D364;" colspan="2" width="100px">Type</th>
         </tr>
       `;
 
-      for (let i = 0; i < POKEMON_DATA.length; i++)
+      for (let i = 0; i < pokemonData.length; i++)
       {
         html += `<tr style="background: #FFFFFF">`;
         html += `
-          <td style="font-family: monospace">#${POKEMON_DATA[i].number.toString().padStart(3, '0')}</td>
+          <td style="font-family: monospace; text-align: center;">#${pokemonData[i].number.toString().padStart(3, '0')}</td>
           <th>
-            <a href="pages/${POKEMON_DATA[i].name}.html" title="${POKEMON_DATA[i].name}">
-              <img alt="${POKEMON_DATA[i].name}" src="images/icons/${POKEMON_DATA[i].id}.png" width="40" height="40">
+            <!-- Disable icon link to page -->
+            <!--
+            <a href="pages/${pokemonData[i].name}.html" title="${pokemonData[i].name}">
+            -->
+              <img alt="${pokemonData[i].name}" src="images/icons/${pokemonData[i].id}.png" width="40" height="40">
+            <!--
             </a>
+            -->
           </th>
           <td>
-            <a href="pages/${POKEMON_DATA[i].name}.html" title="${POKEMON_DATA[i].name}">${POKEMON_DATA[i].name}</a>
+            <!--
+            <a href="pages/${pokemonData[i].name}.html" title="${pokemonData[i].name}">${pokemonData[i].name}</a>
+            -->
+            <div style="color: #002BB8">${pokemonData[i].name}</div>
           </td>
-          <td colspan="${POKEMON_DATA[i].type2 ? 1 : 2}" rowspan="1" style="text-align: center; background: ${TYPE_BLOCKS[POKEMON_DATA[i].type1].color}">
-            <a href="https://bulbapedia.bulbagarden.net/wiki/${TYPE_BLOCKS[POKEMON_DATA[i].type1].name}_(type)" title="${TYPE_BLOCKS[POKEMON_DATA[i].type1].name} (type)">
-              <span style="color: #FFFFFF">${TYPE_BLOCKS[POKEMON_DATA[i].type1].name}</span>
+          <td colspan="${pokemonData[i].type2 ? 1 : 2}" rowspan="1" style="text-align: center; background: ${TYPE_BLOCKS[pokemonData[i].type1].color}">
+            <a href="https://bulbapedia.bulbagarden.net/wiki/${TYPE_BLOCKS[pokemonData[i].type1].name}_(type)" title="${TYPE_BLOCKS[pokemonData[i].type1].name} (type)">
+              <span style="color: #FFFFFF">${TYPE_BLOCKS[pokemonData[i].type1].name}</span>
             </a>
           </td>
         `;
-        if (POKEMON_DATA[i].type2)
+        if (pokemonData[i].type2)
         {
           html += `
-            <td colspan="1" rowspan="1" style="text-align: center; background: ${TYPE_BLOCKS[POKEMON_DATA[i].type2].color}">
-              <a href="https://bulbapedia.bulbagarden.net/wiki/${TYPE_BLOCKS[POKEMON_DATA[i].type2].name}_(type)" title="${TYPE_BLOCKS[POKEMON_DATA[i].type2].name} (type)">
-                <span style="color: #FFFFFF">${TYPE_BLOCKS[POKEMON_DATA[i].type2].name}</span>
+            <td colspan="1" rowspan="1" style="text-align: center; background: ${TYPE_BLOCKS[pokemonData[i].type2].color}">
+              <a href="https://bulbapedia.bulbagarden.net/wiki/${TYPE_BLOCKS[pokemonData[i].type2].name}_(type)" title="${TYPE_BLOCKS[pokemonData[i].type2].name} (type)">
+                <span style="color: #FFFFFF">${TYPE_BLOCKS[pokemonData[i].type2].name}</span>
               </a>
             </td>
           `;
