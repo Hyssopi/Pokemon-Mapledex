@@ -9,6 +9,7 @@ References:
 - https://maplestory.fandom.com/wiki/Characters_and_Skills
 - https://maplestory.fandom.com/wiki/Category:Major_Bosses
 - https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number
+- https://www.reddit.com/r/Maplestory/comments/hbuf9c/pokemon_types_of_maplestory_classesbosses/
 
 ![splash](images/splash.png)
 
